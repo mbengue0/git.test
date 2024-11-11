@@ -1,0 +1,35 @@
+h2::before {
+    content:".";
+}
+h2::after{
+    content: " End of section";
+}
+
+ul li{
+    background-color: lightgray;
+}
+
+div p{
+    color: blue;
+}
+
+/* li:nth-child(2n)*/
+li:first-child {
+    font-weight: bold;
+}
+a:hover{
+    background-color: yellow;
+}
+a:visited{
+    color: purple;
+}
+input:focus{
+    border: 1px solid;
+}
+@media(max-with:600px){
+    body{ background:lightblue;}
+}
+@media(min-with:800px){
+    p{  font-size: 20px;}
+
+}

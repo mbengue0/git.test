@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Your Social Network</title>
+    <link rel="stylesheet" href="first.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Your Social Network</h1>
+      <nav>
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#feed">News Feed</a></li>
+          <li><a href="#friends">Friends</a></li>
+          <li><a href="#messages">Messages</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="profile">
+        <h2>Welcome, Mouhamadou!</h2>
+        <img
+          src="images/Screenshot 2024-09-30 160602.png"
+          alt="Profile Picture"
+          width="100"
+        />
+        <p>Update your status:</p>
+        <textarea placeholder="What's on your mind?"></textarea>
+        <button>Post</button>
+      </section>
+
+      <section id="feed">
+        <h2>News Feed</h2>
+        <article class="post">
+          <h3>bilal</h3>
+          <p>Just had a great day at the beach! ☀️🏖️</p>
+          <img src="images/OIP.jpg" alt="Beach photo" width="250" />
+          <div class="interactions">
+            <button>Like</button>
+            <button>Comment</button>
+            <button>Share</button>
+          </div>
+        </article>
+      </section>
+
+      <section id="friends">
+        <h2>Friends</h2>
+        <ul>
+          <li>Habib</li>
+          <li>Aliou</li>
+          <li>Mustapha</li>
+        </ul>
+        <button>Find More Friends</button>
+      </section>
+
+      <section id="messages">
+        <h2>Messages</h2>
+        <ul>
+          <li>Habib: Hey, how's it going?</li>
+          <li>Aliou: Are we still on for lunch tomorrow?</li>
+        </ul>
+        <button>New Message</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Your Social Network. All rights reserved.</p>
+      <a href="firstprojet.html">Logout</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      id="colorBox"
+      style="width: 100px; height: 100px; background-color: gray"
+    ></div>
+
+    <script>
+      const colorBox = document.getElementById("colorBox");
+
+      // Mouse enter event
+
+      colorBox.addEventListener("mouseenter", function (event) {
+        colorBox.style.backgroundColor = "green";
+        console.log("Event type:", event.type); // "click"
+        console.log("Target element:", event.target); // <button id="myButton">...</button>
+        console.log("Mouse position:", event.clientX, event.clientY); // X and Y coordinates
+      });
+
+      // Mouse leave event
+      colorBox.addEventListener("mouseleave", function (event) {
+        colorBox.style.backgroundColor = "gray";
+
+        console.log("Event type:", event.type); // "click"
+        console.log("Target element:", event.target); // <button id="myButton">...</button>
+        console.log("Mouse position:", event.clientX, event.clientY); // X and Y coordinates
+      });
+
+      const button = document.getElementById("myButton");
+    </script>
+  </body>
+</html>
